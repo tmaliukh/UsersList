@@ -1,0 +1,58 @@
+#root {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+}
+.table-row > tr {
+    background-color: rgb(76, 74, 74);
+}
+
+.table-row tr th{
+    color: rgb(255, 254, 254);
+    font-size: 16px;
+}
+
+.table-body {
+    background-color: rgb(250, 247, 248);
+}
+
+.table-row:nth-child(odd){
+    background-color: rgb(237, 235, 235);
+}
+
+.table-row:hover {
+   cursor: pointer;
+   border: 1px solid red;
+   background-color: white;
+}
+.react-icon {
+    font-size: 20px;
+    color: red;
+    vertical-align: middle;
+}
+
+.tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+}
+
+.icon:hover .tooltiptext {
+    visibility: visible;
+}
+
+.action-cell:hover {
+    cursor: pointer;
+    background-color: rgb(227, 224, 224);
+}
+
+.action-cell {
+    border: 1px solid transparent;
+}
