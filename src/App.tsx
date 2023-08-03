@@ -3,12 +3,12 @@ import { UsersPage } from './pages/users/UsersPage'
 import { UserDetailPage } from './pages/userDetail/UserDetailPage';
 import { HomePage } from './pages/HomePage';
 import { useGetUsers } from './hooks/useGetUsers';
-import { User } from './types';
+import { User, UserDataType } from './types';
 import { Route, Routes } from 'react-router-dom';
 import { ErrorPage } from './pages/ErrorPage';
 
 function App() {
-  const userData = useGetUsers<User>()
+  const userData: UserDataType = useGetUsers<User>()
   const [users] = userData
   return (
     <>

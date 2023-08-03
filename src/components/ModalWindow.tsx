@@ -52,7 +52,7 @@ export const ModalWindow = ({ openModal, handleClose, user, updateUser }: ModalP
             firstname: user.firstname,
             lastname: user.lastname,
             email: user.email,
-            company: user.company.name
+            company: user?.company?.name
         });
     }, [user])
 

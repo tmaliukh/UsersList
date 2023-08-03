@@ -23,4 +23,4 @@ type UserAddress = {
 
 export type ActionFunction = React.Dispatch<React.SetStateAction<boolean>>
 
-export type UserDataType = readonly [User[], React.Dispatch<React.SetStateAction<User[]>>, boolean]
+export type UserDataType = any 

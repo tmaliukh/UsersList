@@ -7,7 +7,7 @@ import { ModalWindow } from '../../components/ModalWindow';
 export const UsersPage: React.FC<UserDataType> = (props: UserDataType) => {
     const [openModal, setOpenModal] = useState(false);
     const [users, setUsers, loading] = props.userData;
-    const [editUser, setEditUser] = useState<User | null>(null);
+    const [editUser, setEditUser] = useState<User | any>(null);
 
     const handleOpen = (e: React.MouseEvent<HTMLTableCellElement, MouseEvent>, user: User) => {
         e.stopPropagation()
